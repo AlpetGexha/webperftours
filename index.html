@@ -43,6 +43,10 @@
 
 	<script>
 		if (location.pathname === "/") {
+			const script = document.createElement('script');
+			script.src = 'https://slowfil.es/file?type=js&delay=1500';
+			script.async = true;
+			document.body.appendChild(script);
 		}
 	</script>
 </head>
